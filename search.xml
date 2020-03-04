@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo+Github</title>
+      <link href="/2020/02/23/blog-open-source/"/>
+      <url>/2020/02/23/blog-open-source/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>搭建过程其实很简单，在我设置自己喜欢的主题时却费了九牛二虎之力（泪）。</p><hr><p>Hexo搭建步骤<br>1.安装Git<br>2.安装Node.js<br>3.安装Hexo<br>4.GitHub创建个人仓库<br>5.生成SSH添加到GitHub<br>6.将Hexo部署到GitHub<br>7.设置个人域名<br>8.发布文章</p><hr><h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>安装Git和Node.js是很简单的不再叙述。<br>安装Hexo<br>1.新建一个文件夹，用来存放博客相关内容<br>鼠标右键点击Git Bash Here<br>2.在命令窗口中输入以下命令<br>//第一条   这是安装hexo的基础框架<br>npm install -g hexo</p><p>//第二条   这是初始化hexo框架 这个可能会比较慢<br>hexo init</p><p>//第三条 安装所需要的组件<br>npm install</p><p>//第四条 编译生成静态页面<br>hexo g</p><p>//第五条 启动本地服务<br>hexo s</p><p>这时候你可以在本地看到你的博客了<br>3.将Hexo部署到GitHub<br>打开博客根目录下的_config.yml文件，这是博客的配置文件，在这里你可以修改与博客配置相关的各种信息。</p><p>修改最后一行的配置：</p><p>deploy:<br>  type: git<br>  repository:<br>  branch: master<br>Yml<br>repository修改为你自己的github项目地址即可。<br>（此处一定要注意：后面有一个空格）</p><p>安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p><p>npm install hexo-deployer-git –save<br>然后</p><p>hexo clean<br>hexo generate<br>hexo deploy</p><p>部署成功之后就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a>  看到你的博客了</p><h2 id="个人域名"><a href="#个人域名" class="headerlink" title="个人域名"></a>个人域名</h2><p>这个东西可有可无。我是在米特网注册申请了一个免费域名(<a href="http://yasheng.cr.cx" target="_blank" rel="noopener">http://yasheng.cr.cx</a>)<br>你也可以在其他地方购买自己喜欢的域名。</p><h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><p>首先在博客根目录下右键打开git bash，安装一个扩展npm i hexo-deployer-git。然后输入hexo new post “（这里是你的文章标题）”，新建一篇文章。</p><p>打开source_posts的目录，可以发现下面多了一个文件夹和一个.md文件，一个用来存放你的图片等数据，另一个就是你的文章文件啦。</p><p>编写完markdown文件后，根目录下输入hexo g生成静态网页，然后输入hexo s可以本地预览效果，最后输入hexo d上传到github上。这时打开你的github.io主页就能看到发布的文章啦。</p><p>到此为止你已经拥有一个自己的博客了，后续你可以自己更换自己的博客主题。在Github上搜索Hexo theme选择自己喜欢的就可以了。当然你也可以自行设计、调整博客页面样式了。</p><table>  <tbody><tr>    <td><img width="100" src="https://ae01.alicdn.com/kf/Ha045c82f4dc645c9b0a6352c51a05f60e.jpg"></td>    <td><img width="100" src="https://ae01.alicdn.com/kf/H682f5c09204e41cc8e6e7fc9ab3c97e1e.png"></td>    <td><img width="100" src="https://ae01.alicdn.com/kf/H0289bb265fd644b784f9e4a8869a6008j.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Github </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
