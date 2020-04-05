@@ -4,11 +4,24 @@
   
     
     <entry>
-      <title>爬虫学习笔记1</title>
+      <title>&#39;新建</title>
+      <link href="/2020/04/05/xin-jian/"/>
+      <url>/2020/04/05/xin-jian/</url>
+      
+        <content type="html"><![CDATA[<p>这就可以了啊，你把这个部署上去，保存，然后hexo d就好了啊省的一个分布式的巴哈不是v不是v和v几乎是说的不是单纯</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>爬虫学习</title>
       <link href="/2020/04/03/pa-chong-xue-xi-bi-ji-1/"/>
       <url>/2020/04/03/pa-chong-xue-xi-bi-ji-1/</url>
       
-        <content type="html"><![CDATA[<p>###爬虫笔记</p><hr><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<p>###爬虫笔记</p><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       
